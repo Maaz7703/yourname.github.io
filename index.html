@@ -2,9 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Maaz | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -20,50 +25,61 @@
   </nav>
 </header>
 
-<section id="home" class="hero">
-  <h2>Hello, I'm <span>Maaz</span></h2>
-  <p>Aspiring Developer | Designer | Tech Enthusiast</p>
-  <a href="#projects" class="btn">View My Work</a>
+<!-- HERO -->
+<section id="home" class="hero fade-in">
+  <h2>Hello, I’m <span>Maaz Bin Javed</span></h2>
+  <p>Data Scientist • Developer • Tech Enthusiast</p>
+
+  <div class="hero-buttons">
+    <a href="#projects" class="btn">View Work</a>
+    <a href="cv.pdf" class="btn outline" download>Download CV</a>
+  </div>
 </section>
 
-<section id="about" class="about">
+<!-- ABOUT -->
+<section id="about" class="about fade-in">
   <h2>About Me</h2>
   <p>
-    I'm a passionate developer focused on building clean, responsive,
-    and user-friendly web applications. I love turning ideas into reality
-    using code.
+    A passionate and results-driven Data Science Engineer/Data Analyst with a strong background in harnessing data to drive insights and make data-informed decisions.
   </p>
 </section>
 
-<section id="projects" class="projects">
+<!-- PROJECTS -->
+<section id="projects" class="projects fade-in">
   <h2>Projects</h2>
 
   <div class="project-grid">
     <div class="project-card">
       <h3>Portfolio Website</h3>
-      <p>Personal responsive portfolio using HTML & CSS.</p>
+      <p>Luxury dark-themed responsive portfolio.</p>
     </div>
 
     <div class="project-card">
       <h3>Landing Page</h3>
-      <p>Modern landing page with clean UI.</p>
+      <p>Modern UI with smooth animations.</p>
     </div>
 
     <div class="project-card">
       <h3>Web App</h3>
-      <p>JavaScript-based interactive web application.</p>
+      <p>Interactive JavaScript-based application.</p>
     </div>
   </div>
 </section>
 
-<section id="contact" class="contact">
+<!-- CONTACT -->
+<section id="contact" class="contact fade-in">
   <h2>Contact Me</h2>
-  <p>Email: <strong>your-email@example.com</strong></p>
-  <p>GitHub: <strong>github.com/yourusername</strong></p>
+
+  <form action="https://formspree.io/f/xbldwqpr" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
 </section>
 
 <footer>
-  <p>© 2026 Maaz. All Rights Reserved.</p>
+  <p>© 2026 Maaz. Crafted with precision.</p>
 </footer>
 
 <script src="script.js"></script>
